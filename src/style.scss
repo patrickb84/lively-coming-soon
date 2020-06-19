@@ -1,0 +1,91 @@
+// Boostrap
+@import "./bootstrap/scss/bootstrap.scss";
+
+// Adobe fonts
+@import url("https://use.typekit.net/pcy8rsm.css");
+
+.font-peacock {
+  font-family: jaf-peacock, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-peacock-loop {
+  font-family: jaf-peacock-loop, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-peacock-short {
+  font-family: jaf-peacock-short, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-peacock-swash {
+  font-family: jaf-peacock-swash, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-sofia-soft {
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  &.font-weight-bold {
+    font-family: sofia-pro-soft, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+em.font-sofia-soft {
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  &.font-weight-bold {
+    font-family: sofia-pro-soft, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  // .slogan {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   text-align: center;
+  // }
+  
+}
+
+// #sign-up-form {
+//   position: absolute;
+//   bottom: 0;
+// }
+
+.underline-wavy {
+  text-decoration: #fae342 wavy underline;
+}
+
+.text-shadow-header {
+  text-shadow: 2px 2px 8px pink;
+}
