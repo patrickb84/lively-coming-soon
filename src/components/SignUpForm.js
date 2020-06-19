@@ -10,6 +10,7 @@ const SignUpForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ email });
+    window.location.href = "https://mailchi.mp/dc37a12e4caf/lively-news";
   };
 
   return (
