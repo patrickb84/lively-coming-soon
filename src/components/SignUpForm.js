@@ -23,22 +23,23 @@ const SignUpForm = () => {
         Sign up for the newsletter!
       </label>
       <div
-        className="input-group input-group-lg- d-flex mx-auto"
-        style={{ maxWidth: "600px" }}
+        className="input-group d-flex mx-auto"
+        style={{ maxWidth: "500px" }}
       >
         <input
           id="email"
           type="email"
-          className="form-control p-3"
-          placeholder="Your email"
+          className="form-control"
+          placeholder="Enter your email"
           aria-label="Your email"
           aria-describedby="button-signup"
           value={email}
           name="email"
           onChange={handleUpdateValue}
+          style={{paddingTop: 10, paddingBottom: 10}}
         />
-        <button className="btn btn-primary" type="submit" id="button-signup">
-          Sign Up
+        <button className="btn btn-primary px-3 text-white" type="submit" id="button-signup">
+        <i className="fas fa-paper-plane fa-lg"/>
         </button>
       </div>
     </form>

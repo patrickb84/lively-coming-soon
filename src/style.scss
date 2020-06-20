@@ -50,10 +50,14 @@ em.font-sofia-soft {
   }
 }
 
+html, body {
+  height: 100%;
+}
+
 video {
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,6 +66,11 @@ video {
 .viewport-header {
   position: relative;
   height: 100vh;
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      height: calc(100vh - 56px);
+    }
+  }
   text-align: center;
   display: flex;
   flex-direction: column;

@@ -16,13 +16,13 @@ function App() {
 
       <header className="viewport-header">
         <div className="text-center">
-          <img src={logo} alt="Lively Farm Logo" style={{ width: "10rem" }} />
+          <img src={logo} alt="Lively Farm Logo" style={{ width: "6rem" }} />
         </div>
 
         {/* SLOGAN */}
         <h1 className="display-1 text-white font-peacock my-4 my-sm-5 px-2">
-          Stay tuned for something{" "}
-          <em className="font-peacock-loop underline-wavy">adorable</em>.
+          Something{" "}
+          <em className="font-peacock-loop underline-wavy">lively</em> coming soon...
         </h1>
 
         <SignUpForm />
