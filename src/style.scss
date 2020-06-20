@@ -1,3 +1,6 @@
+// Responsive Utils
+@import "./assets/responsive.scss";
+
 // Boostrap
 @import "./bootstrap/scss/bootstrap.scss";
 
@@ -53,9 +56,11 @@ em.font-sofia-soft {
 html,
 body {
   height: 100%;
-  @supports (-webkit-appearance: none) {
-    & {
-      height: calc(100vh - 56px);
+  @include respond-below(sm) {
+    @supports (-webkit-appearance: none) {
+      & {
+        height: calc(100vh - 56px);
+      }
     }
   }
 }
@@ -64,9 +69,11 @@ video {
   object-fit: cover;
   width: 100vw;
   height: 100%;
-  @supports (-webkit-appearance: none) {
-    & {
-      height: calc(100vh - 56px);
+  @include respond-below(sm) {
+    @supports (-webkit-appearance: none) {
+      & {
+        height: calc(100vh - 56px);
+      }
     }
   }
   position: fixed;
@@ -77,9 +84,11 @@ video {
 .viewport-header {
   position: relative;
   height: 100vh;
-  @supports (-webkit-appearance: none) {
-    & {
-      height: calc(100vh - 56px);
+  @include respond-below(sm) {
+    @supports (-webkit-appearance: none) {
+      & {
+        height: calc(100vh - 56px);
+      }
     }
   }
   text-align: center;
@@ -107,4 +116,11 @@ video {
 
 .text-shadow-header {
   text-shadow: 2px 2px 8px pink;
+}
+
+.logo {
+  width: 5.5rem;
+  @include respond-above(sm) {
+    width: 6.5rem;
+  }
 }

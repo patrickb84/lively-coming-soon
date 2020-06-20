@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// https://farm.us10.list-manage.com/subscribe/post?u=67aef0cfeee635141b9b14ac7&amp;id=7e79843ef2
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
 
