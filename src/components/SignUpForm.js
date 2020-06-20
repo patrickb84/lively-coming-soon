@@ -11,7 +11,7 @@ const SignUpForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ email });
-    window.location.href = "https://mailchi.mp/dc37a12e4caf/lively-news";
+    window.location.href = "https://mailchi.mp/6ebfa84e1625/lively-newsletter";
   };
 
   return (
@@ -23,10 +23,7 @@ const SignUpForm = () => {
       >
         Sign up for the newsletter!
       </label>
-      <div
-        className="input-group d-flex mx-auto"
-        style={{ maxWidth: "500px" }}
-      >
+      <div className="input-group d-flex mx-auto" style={{ maxWidth: "500px" }}>
         <input
           id="email"
           type="email"
@@ -37,10 +34,14 @@ const SignUpForm = () => {
           value={email}
           name="email"
           onChange={handleUpdateValue}
-          style={{paddingTop: 10, paddingBottom: 10}}
+          style={{ paddingTop: 10, paddingBottom: 10 }}
         />
-        <button className="btn btn-primary px-3 text-white" type="submit" id="button-signup">
-        <i className="fas fa-paper-plane fa-lg"/>
+        <button
+          className="btn btn-primary px-3 text-white"
+          type="submit"
+          id="button-signup"
+        >
+          <i className="fas fa-paper-plane fa-lg" />
         </button>
       </div>
     </form>

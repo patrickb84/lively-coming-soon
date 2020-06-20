@@ -124,3 +124,12 @@ video {
     width: 6.5rem;
   }
 }
+
+.newsletter-link {
+  color: white;
+  text-decoration: #73c9c8 wavy underline;
+  transition: color 0.25s;
+  &:hover {
+    color: #73c9c8;
+  }
+}
