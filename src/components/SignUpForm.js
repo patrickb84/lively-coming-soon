@@ -12,7 +12,7 @@ const SignUpForm = () => {
         className="pb-2 font-weight-bold text-white mailchimp-label"
         style={{ fontSize: 22 }}
       >
-        Sign up for the newsletter!
+        Join the email list for updates & goodies!
       </label>
       <Mailchimp
         action="https://farm.us10.list-manage.com/subscribe/post?u=67aef0cfeee635141b9b14ac7&amp;id=7e79843ef2"

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-import metaImage from "./assets/meta_image.png";
+// import metaImage from "./assets/meta_image.png";
 import headerVid from "./assets/lively.mp4";
 import logo from "./assets/SVG/logo.svg";
 
@@ -10,7 +10,7 @@ import SignUpForm from "./components/SignUpForm";
 function App() {
   return (
     <>
-      <video playsInline autoPlay muted loop poster={metaImage} id="bgvid">
+      <video playsInline autoPlay muted loop id="bgvid">
         <source src={headerVid} type="video/mp4" />
       </video>
 

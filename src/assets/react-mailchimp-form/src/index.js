@@ -70,12 +70,12 @@ class Mailchimp extends React.Component {
         </div>
 
         <div className="msg-alert mt-3">
-          {!status && <p style={{height: 24}}></p>}
+          {!status && <p style={{ height: 24 }}></p>}
           {status === "sending" && (
             <p style={styles.sendingMsg}>{messages.sending}</p>
           )}
           {status === "success" && (
-            <p style={styles.successMsg}>{messages.success}</p>
+            <p style={styles.successMsg}>You're in, thanks for subscribing! Meanwhile, <a href="https://www.pinterest.com/top50cutest/baby-goats/" className="text-primary" style={{textDecoration: "none"}}>baby goats</a>...</p>
           )}
           {status === "duplicate" && (
             <p style={styles.duplicateMsg}>{messages.duplicate}</p>
@@ -95,7 +95,11 @@ class Mailchimp extends React.Component {
 Mailchimp.defaultProps = {
   messages: {
     sending: "Sending...",
-    success: "Thanks for subscribing!!!",
+    success: `You're in, thanks for subscribing! Meanwhile, ${(
+      <a href="https://www.pinterest.com/top50cutest/baby-goats/">
+        baby goats.
+      </a>
+    )}`,
     error: "Hmm... something misfired. Try again later?",
     empty: "You must write an email address.",
     duplicate: "Too many subscribe attempts for this email address",
