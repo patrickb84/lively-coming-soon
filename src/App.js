@@ -5,7 +5,7 @@ import goatRose from "./assets/lamine-bendib-Ep-jQikE3-w-unsplash.jpg";
 import headerVid from "./assets/lively.mp4";
 import logo from "./assets/SVG/logo.svg";
 
-// import SignUpForm from "./components/SignUpForm";
+import SignUpForm from "./components/SignUpForm";
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
           <em className="font-peacock-loop underline-wavy">lively</em> coming soon...
         </h1>
 
-        {/* <SignUpForm /> */}
-        <div>
+        <SignUpForm />
+        {/* <div>
           <a href="https://mailchi.mp/6ebfa84e1625/lively-newsletter" className="newsletter-link h3">Sign up for our newsletter!</a>
-        </div>
+        </div> */}
       </header>
     </>
   );
