@@ -53,29 +53,28 @@ em.font-sofia-soft {
   }
 }
 
+@mixin mobileHeight {
+  // @include respond-below(sm) {
+  //   @supports (-webkit-appearance: none) {
+  //     & {
+  //       height: calc(100vh - 56px);
+  //     }
+  //   }
+  // }
+  height: 100vh;
+}
+
 html,
 body {
   height: 100%;
-  @include respond-below(sm) {
-    @supports (-webkit-appearance: none) {
-      & {
-        height: calc(100vh - 56px);
-      }
-    }
-  }
+  @include mobileHeight();
 }
 
 video {
   object-fit: cover;
   width: 100vw;
   height: 100%;
-  @include respond-below(sm) {
-    @supports (-webkit-appearance: none) {
-      & {
-        height: calc(100vh - 56px);
-      }
-    }
-  }
+  @include mobileHeight();
   position: fixed;
   top: 0;
   left: 0;
@@ -86,13 +85,7 @@ video {
   height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  @include respond-below(sm) {
-    @supports (-webkit-appearance: none) {
-      & {
-        height: calc(100vh - 56px);
-      }
-    }
-  }
+  @include mobileHeight();
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -121,7 +114,7 @@ video {
 }
 
 .logo {
-  width: 5.5rem;
+  width: 5rem;
   @include respond-above(sm) {
     width: 6.5rem;
   }
@@ -137,7 +130,7 @@ video {
 }
 
 .mailchimp-label {
-  text-decoration: #9BCDCE wavy underline;
+  text-decoration: #9bcdce wavy underline;
   display: inline-block;
   margin-bottom: 0.75rem;
 }

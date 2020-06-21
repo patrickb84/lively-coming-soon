@@ -6,13 +6,13 @@ import Mailchimp from "../assets/react-mailchimp-form/src/index";
 
 const SignUpForm = () => {
   return (
-    <div>
+    <div className="px-3" style={{maxWidth: "100%"}}>
       <label
         htmlFor="mailchimp"
         className="pb-2 font-weight-bold text-white mailchimp-label"
-        style={{ fontSize: 22 }}
+        style={{ fontSize: 20 }}
       >
-        Join the email list for updates & goodies!
+        Join the email list for updates!
       </label>
       <Mailchimp
         action="https://farm.us10.list-manage.com/subscribe/post?u=67aef0cfeee635141b9b14ac7&amp;id=7e79843ef2"
