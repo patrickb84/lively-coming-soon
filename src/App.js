@@ -20,7 +20,7 @@ function App() {
         </div>
 
         {/* SLOGAN */}
-        <h1 className="display-2 text-white font-peacock my-2 my-md-5 px-2">
+        <h1 className="display-1 text-white font-peacock my-2 my-md-5 px-2">
           Something{" "}
           <em className="font-peacock-loop underline-wavy">lively</em> coming soon
         </h1>
